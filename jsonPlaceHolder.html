@@ -60,11 +60,17 @@
                         var tableBody = $("#table-body");
                         tableBody.empty(); 
                         $.each(data, function(index, post) {
-                            var row = $("<tr>");
-                            row.append($("<td>").text(post.userId));
-                            row.append($("<td>").text(post.id));
-                            row.append($("<td>").text(post.title));
-                            row.append($("<td>").text(post.body));
+                            // var row = $("<tr>");
+                            // row.append($("<td>").text(post.userId));
+                            // row.append($("<td>").text(post.id));
+                            // row.append($("<td>").text(post.title));
+                            // row.append($("<td>").text(post.body));
+                                 var row = "<tr>" +
+                        "<td>" + post.userId + "</td>" +
+                        "<td>" + post.id + "</td>" +
+                        "<td>" + post.title + "</td>" +
+                        "<td>" + post.body + "</td>" +
+                        "</tr>";
                             tableBody.append(row);
                         });
                     },
