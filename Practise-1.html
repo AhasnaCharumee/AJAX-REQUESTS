@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Implement Ajax with XMLHTTPRequest object</title>
+</head>
+<body>
+    <button type="button" id="button">Send arequest</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $("#button").click(function (){
+            // alert("Hey");
+           var http =  new XMLHttpRequest();
+           console.log(http.readyState,"After object created");
+           http.open("GET","db.txt");
+            console.log(http.readyState,"After the open method invoke");
+
+            http.responseText;
+
+
+            console.log(http.responseText);
+            console.log(http.readyState,"After the response text printed");
+
+            http.send();
+            console.log(http.readyState,"After the send method invoked");
+
+
+            //when the request statuus are change please run this
+            http.onreadystatechange=function (){
+                console.log(http.readyState,"state change ")
+                console.log(http.responseText);
+            }
+            console.log("request finished ");
+
+
+
+        });
+    </script>
+</body>
+</html>
