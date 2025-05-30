@@ -1,0 +1,37 @@
+[{
+  "id": "C001",
+  "name" : "Pasan",
+  "address": "Galle",
+  "salary": 100000
+},
+  {
+  "id": "C002",
+  "name" : "Pasandi",
+  "address": "Ginthota",
+  "salary": 700000
+  },
+  {
+    "id": "C002",
+    "name" : "Pasandi",
+    "address": "Ginthota",
+    "salary": 700000
+  },
+  {
+    "id": "C002",
+    "name" : "Pasandi",
+    "address": "Ginthota",
+    "salary": 700000
+  },
+  {
+    "id": "C002",
+    "name" : "Pasandi",
+    "address": "Ginthota",
+    "salary": 700000
+  },
+  {
+    "id": "C002",
+    "name" : "Pasandi",
+    "address": "Ginthota",
+    "salary": 700000
+  }
+  ]
